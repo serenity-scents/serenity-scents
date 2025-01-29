@@ -8,7 +8,7 @@ window.onload=function(){
             const productDiv = document.createElement("div");
             productDiv.className = "flex flex-col items-center h-full w-full";
                 productDiv.innerHTML = `
-                    <p class="text-6xl font-bold text-white my-4">No item found!</p>
+                    <p class="text-2xl md:text-6xl font-bold text-white my-4">No item found!</p>
                     <p class="text-xl text-white">Cart has no item yet.</p>
                     <button class="border-2 rounded-full px-10 py-2 my-10 text-lg font-semibold hover:animate-pulse animate-bounce text-white bg-[#ad8d78] hover:bg-[#ba8460]" onclick="location.href='products.html'">
                         Shop now
@@ -23,7 +23,7 @@ window.onload=function(){
             const productDiv = document.createElement("div");
             productDiv.className = "flex flex-col items-center h-full w-full";
                 productDiv.innerHTML = `
-                    <p class="text-6xl font-bold text-white my-4">No item found!</p>
+                    <p class="text-2xl md:text-6xl font-bold text-white my-4">No item found!</p>
                     <p class="text-xl text-white">Cart has no item yet.</p>
                     <button class="border-2 rounded-full px-10 py-2 my-10 text-lg font-semibold hover:animate-pulse animate-bounce text-white bg-[#ad8d78] hover:bg-[#ba8460]" onclick="location.href='products.html'">
                         Shop now
