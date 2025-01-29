@@ -79,3 +79,12 @@ function addToCart(newItem){
 }
 
 
+function showModal() {
+    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modalOverlay").style.display = "block";
+}
+
+function hideModal() {
+    document.getElementById("myModal").style.display = "none";
+    document.getElementById("modalOverlay").style.display = "none";
+}
