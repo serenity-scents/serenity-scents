@@ -1057,11 +1057,6 @@ video {
   background-color: rgb(241 236 233 / var(--tw-bg-opacity, 1));
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
-}
-
 .bg-black\/50 {
   background-color: rgb(0 0 0 / 0.5);
 }
@@ -1297,10 +1292,6 @@ video {
 
 .underline-offset-4 {
   text-underline-offset: 4px;
-}
-
-.opacity-20 {
-  opacity: 0.2;
 }
 
 .opacity-50 {
