@@ -99,7 +99,7 @@ function checkOut() {
     let cart = document.getElementById("cart");
     cart.className="hidden"
     let check_out = document.getElementById("check-out");
-    check_out.className = "flex flex-col z-40 items-center justify-center w-full mt-10 h-full overflow-hidden";
+    check_out.className = "flex flex-col z-40 items-center justify-center w-full mt-10 h-full";
 }
 
 function showPrivacyModal() {
