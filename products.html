@@ -24,7 +24,7 @@
                     <p class="text-5xl font-serif font-medium text-[#583e2f]">Scents</p>
                 </div>
                 <!-- <h1 class="text-4xl font-serif font-medium text-white">Serenity Haven</h1> -->
-                <p class="text-xl text-white font-semibold ">Your favorite destination for handcrafted candles</p>
+                <p class="text-xl text-white font-semibold ">Light up your world, one scent at a time.</p>
             </div>
             <div class="relative flex justify-end px-4 py-8 gap-4 text-white font-medium w-[20%]">
                 <div class="flex h-5 w-5 justify-center items-center text-center rounded-full bg-[#ad8d78] absolute top-6 right-[125px]">
@@ -41,78 +41,102 @@
     <div class="flex flex-col z-50 items-center justify-center w-full gap-8 pb-8 mt-20">
         <!-- <p class="text-white text-6xl ">Products</p> -->
         <div class="flex flex-row w-full justify-center items-center h-[400px] gap-8">
-            <div class="flex flex-col h-full w-1/4 bg-white  rounded-lg">
-                <div class="flex w-full h-[80%] justify-center">
-                    <img class="flex object-cover w-80 h-80 " src="./img/item_1.jpg">
-                </div>
-                <div class="flex flex-row justify-between items-center w-full bg-[#f1ece9] rounded-b-lg h-[20%] px-4">
-                    <div class=" flex flex-col justify-center h-full">
-                        <p class="flex text-lg">Coffee Roast</p>
-                        <p class="flex text-2xl font-bold">&#x20B1; 100</p>
-                    </div>
-                    <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '1', name: 'Coffe Roast', price: 100, image: './img/item_1.jpg'})">Add to cart</button>
-                </div>
-            </div>
-            <div class="flex flex-col h-full w-1/4 bg-white  rounded-lg">
-                <div class="flex w-full h-[80%] justify-center">
-                    <img class="flex object-cover w-80 h-80 " src="./img/item_2.jpg">
-                </div>
-                <div class="flex flex-row justify-between items-center w-full bg-[#f1ece9] rounded-b-lg h-[20%] px-4">
-                    <div class=" flex flex-col justify-center h-full">
-                        <p class="flex text-lg">Rose</p>
-                        <p class="flex text-2xl font-bold">&#x20B1; 150</p>
-                    </div>
-                    <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '2', name: 'Rose Serenity', price: 150, image: './img/item_2.jpg'})">Add to cart</button>
-                </div>
-            </div>
-            <div class="flex flex-col h-full w-1/4 bg-white  rounded-lg">
-                <div class="flex w-full h-[80%] justify-center">
+            <div class="relative flex flex-col h-full w-1/4 bg-white  rounded-lg">
+                <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full absolute z-50 hover:z-0" style="background-image:url('./img/item_1.jpg');">
+                <!-- <div class="flex w-full h-[80%] justify-center">
                     <img class="flex object-cover w-80 h-80 " src="./img/item_3.jpg">
-                </div>
-                <div class="flex flex-row justify-between items-center w-full bg-[#f1ece9] rounded-b-lg h-[20%] px-4">
-                    <div class=" flex flex-col justify-center h-full">
-                        <p class="flex text-lg">Jasmine Whisper</p>
-                        <p class="flex text-2xl font-bold">&#x20B1; 200</p>
+                </div> -->
+                <div class="flex flex-col justify-center items-center w-full h-full bg-black/50 text-white rounded-b-lg  px-8 py-4 z-0 hover:z-50">
+                    <div class=" flex flex-col justify-center items-center h-full gap-8">
+                        <p class="flex text-2xl font-extrabold">Coffee Roast</p>
+                        <p class="flex text-lg">A warm, comforting coffee aroma, 100ml, 24 hours burn time.</p>
                     </div>
-                    <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '3', name: 'Jasmine Whisper', price: 200, image: './img/item_3.jpg'})">Add to cart</button>
+                    <div class="flex flex-row justify-between items-center w-full">
+                        <p class="flex text-2xl font-bold">&#x20B1; 100</p>
+                        <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '1', name: 'Coffee Roast', price: 100, image: './img/item_1.jpg'})">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="relative flex flex-col h-full w-1/4 bg-white  rounded-lg">
+                <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full absolute z-50 hover:z-0" style="background-image:url('./img/item_2.jpg');">
+                <!-- <div class="flex w-full h-[80%] justify-center">
+                    <img class="flex object-cover w-80 h-80 " src="./img/item_3.jpg">
+                </div> -->
+                <div class="flex flex-col justify-center items-center w-full h-full bg-black/50 text-white rounded-b-lg  px-8 py-4 z-0 hover:z-50">
+                    <div class=" flex flex-col justify-center items-center h-full gap-8">
+                        <p class="flex text-2xl font-extrabold">Rosary Glow</p>
+                        <p class="flex text-lg">A peaceful blend of soft florals, 100ml, 24 hours burn time.</p>
+                    </div>
+                    <div class="flex flex-row justify-between items-center w-full">
+                        <p class="flex text-2xl font-bold">&#x20B1; 150</p>
+                        <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '2', name: 'Rosary Glow', price: 150, image: './img/item_2.jpg'})">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="relative flex flex-col h-full w-1/4 bg-white  rounded-lg">
+                <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full absolute z-50 hover:z-0" style="background-image:url('./img/item_3.jpg');">
+                <!-- <div class="flex w-full h-[80%] justify-center">
+                    <img class="flex object-cover w-80 h-80 " src="./img/item_3.jpg">
+                </div> -->
+                <div class="flex flex-col justify-center items-center w-full h-full bg-black/50 text-white rounded-b-lg  px-8 py-4 z-0 hover:z-50">
+                    <div class=" flex flex-col justify-center items-center h-full gap-8">
+                        <p class="flex text-2xl font-extrabold">Jasmine Whisper</p>
+                        <p class="flex text-lg">A delicate, jasmine fragrance, 100ml, 24 hours burn time.</p>
+                    </div>
+                    <div class="flex flex-row justify-between items-center w-full">
+                        <p class="flex text-2xl font-bold">&#x20B1; 200</p>
+                        <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '3', name: 'Jasmine Whisper', price: 200, image: './img/item_3.jpg'})">Add to cart</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="flex flex-row w-full justify-center items-center h-[400px] gap-8">
-            <div class="flex flex-col h-full w-1/4 bg-white  rounded-lg">
-                <div class="flex w-full h-[80%] justify-center">
-                    <img class="flex object-cover w-80 h-80 " src="./img/item_4.jpg">
-                </div>
-                <div class="flex flex-row justify-between items-center w-full bg-[#f1ece9] rounded-b-lg h-[20%] px-4">
-                    <div class=" flex flex-col justify-center h-full">
-                        <p class="flex text-lg">Lemon Glow</p>
-                        <p class="flex text-2xl font-bold">&#x20B1; 150</p>
+            <div class="relative flex flex-col h-full w-1/4 bg-white  rounded-lg">
+                <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full absolute z-50 hover:z-0" style="background-image:url('./img/item_4.jpg');">
+                <!-- <div class="flex w-full h-[80%] justify-center">
+                    <img class="flex object-cover w-80 h-80 " src="./img/item_3.jpg">
+                </div> -->
+                <div class="flex flex-col justify-center items-center w-full h-full bg-black/50 text-white rounded-b-lg  px-8 py-4 z-0 hover:z-50">
+                    <div class=" flex flex-col justify-center items-center h-full gap-8">
+                        <p class="flex text-2xl font-extrabold">Lemon Mist</p>
+                        <p class="flex text-lg"> A bright, zesty citrus fragrance, 100ml, 24 hours burn time.</p>
                     </div>
-                    <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '4', name: 'Lemon Glow', price: 150, image: './img/item_4.jpg'})">Add to cart</button>
+                    <div class="flex flex-row justify-between items-center w-full">
+                        <p class="flex text-2xl font-bold">&#x20B1; 150</p>
+                        <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '4', name: 'Lemon Mist', price: 150, image: './img/item_4.jpg'})">Add to cart</button>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col h-full w-1/4 bg-white  rounded-lg">
-                <div class="flex w-full h-[80%] justify-center">
-                    <img class="flex object-cover w-80 h-80 " src="./img/item_5.jpg">
-                </div>
-                <div class="flex flex-row justify-between items-center w-full bg-[#f1ece9] rounded-b-lg h-[20%] px-4">
-                    <div class=" flex flex-col justify-center h-full">
-                        <p class="flex text-lg">Lavander</p>
-                        <p class="flex text-2xl font-bold">&#x20B1; 150</p>
+            <div class="relative flex flex-col h-full w-1/4 bg-white  rounded-lg">
+                <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full absolute z-50 hover:z-0" style="background-image:url('./img/item_5.jpg');">
+                <!-- <div class="flex w-full h-[80%] justify-center">
+                    <img class="flex object-cover w-80 h-80 " src="./img/item_3.jpg">
+                </div> -->
+                <div class="flex flex-col justify-center items-center w-full h-full bg-black/50 text-white rounded-b-lg  px-8 py-4 z-0 hover:z-50">
+                    <div class=" flex flex-col justify-center items-center h-full gap-8">
+                        <p class="flex text-2xl font-extrabold">Lavender Essence</p>
+                        <p class="flex text-lg"> A soothing, floral lavender scent, 100ml, 24 hours burn time.</p>
                     </div>
-                    <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '5', name: 'Lavander', price: 150, image: './img/item_5.jpg'})">Add to cart</button>
+                    <div class="flex flex-row justify-between items-center w-full">
+                        <p class="flex text-2xl font-bold">&#x20B1; 150</p>
+                        <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '5', name: 'Lavender Essence', price: 150, image: './img/item_5.jpg'})">Add to cart</button>
+                    </div>
                 </div>
             </div>
-            <div class="flex flex-col h-full w-1/4 bg-white  rounded-lg">
-                <div class="flex w-full h-[80%] justify-center">
-                    <img class="flex object-cover w-80 h-80 " src="./img/item_6.jpg">
-                </div>
-                <div class="flex flex-row justify-between items-center w-full bg-[#f1ece9] rounded-b-lg h-[20%] px-4">
-                    <div class=" flex flex-col justify-center h-full">
-                        <p class="flex text-lg">Mint Haven</p>
+            <div class="relative flex flex-col h-full w-1/4 bg-white  rounded-lg">
+                <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full absolute z-50 hover:z-0" style="background-image:url('./img/item_6.jpg');">
+                <!-- <div class="flex w-full h-[80%] justify-center">
+                    <img class="flex object-cover w-80 h-80 " src="./img/item_3.jpg">
+                </div> -->
+                <div class="flex flex-col justify-center items-center w-full h-full bg-black/50 text-white rounded-b-lg  px-8 py-4 z-0 hover:z-50">
+                    <div class=" flex flex-col justify-center items-center h-full gap-8">
+                        <p class="flex text-2xl font-extrabold">Mint Haven</p>
+                        <p class="flex text-lg"> A refreshing, cool burst of mint, 100ml, 24 hours burn time.</p>
+                    </div>
+                    <div class="flex flex-row justify-between items-center w-full">
                         <p class="flex text-2xl font-bold">&#x20B1; 200</p>
+                        <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '6', name: 'Mint Haven', price:200, image: './img/item_6.jpg'})">Add to cart</button>
                     </div>
-                    <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '6', name: 'Mint Haven', price:200, image: './img/item_6.jpg'})">Add to cart</button>
                 </div>
             </div>
         </div>
