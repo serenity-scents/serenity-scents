@@ -32,17 +32,17 @@ window.onload=function(){
                 productList.appendChild(productDiv);
             return;
         }
-        productList.className = ("flex flex-col w-[50%] items-center h-[800px] gap-4 overflow-y-auto border rounded-lg bg-[#583e2f]/50 scrollbar-thin scrollbar-track-[#F1ECE9] scrollbar-thumb-[#AD8D78] scrollbar-corner-[#BCAA9E]");
+        productList.className = ("flex flex-col w-[90%] md:w-[80%] xl:w-[50%] items-center h-[800px] gap-4 overflow-y-auto border rounded-lg bg-[#583e2f]/50 scrollbar-thin scrollbar-track-[#F1ECE9] scrollbar-thumb-[#AD8D78] scrollbar-corner-[#BCAA9E]");
         cartItems.forEach(product => {
             totalAmount = totalAmount + (product.price * product.qty);
             const productDiv = document.createElement("div");
-            productDiv.className = "flex flex-row h-[300px] w-[90%] bg-white rounded-lg first:mt-10 last:mb-10";
+            productDiv.className = " relative flex flex-col md:flex-row md:h-[300px] w-[70%] md:w-[90%] bg-white rounded-lg first:mt-10 last:mb-10";
             productDiv.id =`item-${product.id}`;
             productDiv.innerHTML = `
-                <div class="flex w-[60%] h-full justify-center items-center ">
-                    <img class="flex w-[70%] h-full" style="background-image: url('${product.image}'); background-size: 100% 100%;">
+                <div class="flex w-full md:w-[60%] h-full justify-center items-center ">
+                    <img class="flex w-[50%] md:w-[70%] h-[200px] md:h-full" style="background-image: url('${product.image}'); background-size: 100% 100%;">
                 </div>
-                <div class="relative flex flex-col justify-between w-[40%] bg-[#f1ece9] rounded-r-lg">
+                <div class="flex flex-col justify-between w-full md:w-[40%] bg-[#f1ece9] rounded-r-lg">
                     <button class=" absolute top-2 right-2 flex font-bold border w-6 h-6 rounded-lg justify-center items-center bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="removeItem(${product.id})">X</button>
                     <div class="px-8 py-8">
                         <p class="text-lg">${product.name}</p>
@@ -56,7 +56,7 @@ window.onload=function(){
                         <div class="flex flex-row justify-between">
                             <div class="flex flex-row justify-center items-center">
                                 <button class="flex border rounded-md w-6 h-6  justify-center items-center text-xl font-extrabold bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="minusOne(${product.id})"> - </button>
-                                <p class="flex text-3xl font-bold p-4 " id="item-${product.id}-qty">${product.qty}</p>
+                                <p class="flex text-xl lg:text-3xl font-bold p-2 lg:p-4 " id="item-${product.id}-qty">${product.qty}</p>
                                 <button class="flex border rounded-md w-6 h-6  justify-center items-center text-xl font-extrabold bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addOne(${product.id})"> + </button>
                             </div>
                             <p class="flex justify-center items-center text-4xl font-bold" id="item-${product.id}-total">${product.price * product.qty}</p>
@@ -66,6 +66,8 @@ window.onload=function(){
             `;
             productList.appendChild(productDiv);
         });
+        let checkOutBtn = document.getElementById("check-out-button");
+        checkOutBtn.className = "flex flex-row w-[90%] md:w-[80%] xl:w-[50%] justify-between  px-8 mb-20 lg:mb-10 w-full";
         const totalAmountElement = document.getElementById("total-amount");
         totalAmountElement.innerHTML = totalAmount;
     }
@@ -127,6 +129,7 @@ function addOne(id){
             $(`#item-${cartItems[itemIndex].id}-total`).text(cartItems[itemIndex].price * cartItems[itemIndex].qty)
             $(`#total-amount`).text(totalAmount)
             $('#cartCount').text(itemCount);
+            $('#cartCountMobile').text(itemCount);
         });
         
     }
@@ -178,6 +181,7 @@ function minusOne(id){
             $(`#item-${cartItems[itemIndex].id}-total`).text(cartItems[itemIndex].price * cartItems[itemIndex].qty)
             $(`#total-amount`).text(totalAmount)
             $('#cartCount').text(itemCount);
+            $('#cartCountMobile').text(itemCount);
         });
         
     }
@@ -204,6 +208,7 @@ function removeItem(id){
             $(document).ready(function() {
                     $(`#item-${itemIndex}`).remove();
                     $('#cartCount').text(itemCount);
+                    $('#cartCountMobile').text(itemCount);
                     location.reload();
                     return;
             });

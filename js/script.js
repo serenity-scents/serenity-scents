@@ -11,6 +11,7 @@ $(document).ready(function() {
         }
     }
     $('#cartCount').text(itemCount);
+    $('#cartCountMobile').text(itemCount);
 });
 function speak(url) {
     const audio = new Audio(url);
@@ -75,6 +76,7 @@ function addToCart(newItem){
     $(document).ready(function() {
         console.log(itemCount)
         $('#cartCount').text(itemCount);
+        $('#cartCountMobile').text(itemCount);
     });
 }
 
@@ -98,4 +100,14 @@ function checkOut() {
     cart.className="hidden"
     let check_out = document.getElementById("check-out");
     check_out.className = "flex flex-col z-40 items-center justify-center w-full mt-10 h-full overflow-hidden";
+}
+
+function showPrivacyModal() {
+    document.getElementById("privacyModal").style.display = "block";
+    document.getElementById("privacyModalOverlay").style.display = "block";
+}
+
+function hidePrivacyModal() {
+    document.getElementById("privacyModal").style.display = "none";
+    document.getElementById("privacyModalOverlay").style.display = "none";
 }
