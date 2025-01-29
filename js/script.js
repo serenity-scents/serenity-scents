@@ -1,11 +1,3 @@
-let companyName = "Serenity-Scents"
-let tabId = companyName+"-tab";
-let currentTab = sessionStorage.getItem(tabId);
-
-console.log(currentTab);
-if(currentTab == null){
-    sessionStorage.setItem(tabId, "home")
-}
 
 $(document).ready(function() {
     let cart = sessionStorage.getItem("cart")
@@ -30,13 +22,7 @@ function speak(url) {
         console.error("Error playing audio:", error);
       });
   }
-// const products = [
-//             { name: "Lavender Bliss", price: 15, image: "lavender.jpg" },
-//             { name: "Vanilla Coffee Dream", price: 14, image: "coffee.jpg" },
-//             { name: "Ocean Oregano Breeze", price: 18, image: "oregano.jpg" },
-//             { name: "Luminous Lemon", price: 18, image: "lemon.jpg" },
-//             { name: "Mystic Rose Charm", price: 18, image: "rose.jpg" }  
-//         ];
+
 function addToCart(newItem){
     console.log("Add item to cart");
     speak("./media/item_added.mp3")
@@ -93,43 +79,3 @@ function addToCart(newItem){
 }
 
 
-        function displayProducts() {
-            const productList = document.getElementById("product-list");
-            products.forEach(product => {
-                const productDiv = document.createElement("div");
-                productDiv.className = "product";
-                productDiv.innerHTML = `
-                    <img src="${product.image}" alt="${product.name}">
-                    <h3>${product.name}</h3>
-                    <p>$${product.price.toFixed(2)}</p>
-                    <button onclick="speak('Added ${product.name} to cart')">Add to Cart</button>
-                `;
-                productList.appendChild(productDiv);
-            });
-        }
-// window.onload=function(){
-//     function showTab(tabId) {
-//         // document.querySelectorAll("section").forEach(section => {
-//         //     section.classList.remove("active");
-//         // });
-//         // document.getElementById(tabId).classList.add("active");
-//         console.log("AAAAAAAAAAAAAAAA");
-//         speak(tabId + section);
-
-//     }
-//     function speak(text) {
-//         console.log
-//                 var msg = new SpeechSynthesisUtterance(text);
-//                 msg.rate = 0.7;
-//                 msg.pitch = 1;
-//                 window.speechSynthesis.speak(msg);
-//     }
-// }
-        
-
-        // function speak(text) {
-        //     const speech = new SpeechSynthesisUtterance(text);
-        //     window.speechSynthesis.speak(speech);
-        // }
-
-        document.addEventListener("DOMContentLoaded", displayProducts);
