@@ -10,7 +10,7 @@
 </head>
 <body class="relative flex flex-col items-center h-screen bg-gradient-to-r via-[#bcaa9e]  from-[#ad8d78]  to-[#ad8d78] max-h-screen">
     <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full fixed z-0 opacity-50" style="background-image:url('./img/bg.jpg');">
-    <div class="flex flex-col w-full z-50 h-full md:h-[60%] mt-4">
+    <div id="navbar" class="flex flex-col w-full z-50 h-full md:h-auto pt-4">
         <div class="flex flex-row items-start justify-center w-full">
             <div class="hidden md:flex justify-start items-center px-4 py-8 gap-4 font-medium w-[20%] ">
                 <a href="index.html" class="flex hover:underline underline-offset-4 text-white text-xl">Home</a>
@@ -19,12 +19,12 @@
             </div>
             <div class="flex flex-col justify-center items-center w-full sm:w-[80%] md::w-[60%] gap-2 ">
                 <div class="flex flex-row justify-center items-end">
-                    <p class="text-2xl sm:text-5xl font-serif font-medium text-[#583e2f]">Serenity</p>
-                    <div class="flex flex-col w-20 h-20 md:w-40 md:h-40 border-0" style="background-image: url('./img/logo.png'); background-size: 100%; "></div>
-                    <p class="text-2xl sm:text-5xl font-serif font-medium text-[#583e2f]">Scents</p>
+                    <p id="name-serenity" class="text-2xl sm:text-5xl font-serif font-medium text-white">Serenity</p>
+                    <div id="logo" class="flex flex-col w-20 h-20 md:w-40 md:h-40 border-0" style="background-image: url('./img/logo.png'); background-size: 100%; "></div>
+                    <p id="name-scents" class="text-2xl sm:text-5xl font-serif font-medium text-white">Scents</p>
                 </div>
                 <!-- <h1 class="text-4xl font-serif font-medium text-white">Serenity Haven</h1> -->
-                <p class="text-sm sm:text-lg md:text-xl text-white font-semibold ">Light up your world, one scent at a time.</p>
+                <p id="tagline" class="text-sm sm:text-lg md:text-xl text-white font-semibold italic font-serif">Light up your world, one scent at a time.</p>
             </div>
             <div class="relative hidden md:flex justify-end px-4 py-8 gap-4 text-white font-medium w-[20%]">
                 <div class="flex h-5 w-5 justify-center items-center text-center rounded-full bg-[#ad8d78] absolute top-6 right-[125px]">
@@ -39,7 +39,7 @@
         </div>
     </div>
     
-    <div class="flex flex-col z-50 justify-between items-center w-full md:w-[80%] gap-20">
+    <div class="flex flex-col z-40 justify-between items-center w-full md:w-[80%] gap-20">
         <div class="flex flex-col md:flex-row gap-4 xl:gap-8 w-full justify-center items-center px-2 md:px-4">
             <div class="flex flex-col  z-50 w-[80%] md:w-[50%] xl:w-[40%]">
                 <p class="font-bold text-2xl  md:text-4xl text-white z-50 mt-10 mb-2 animate-fadeinleft ">Mission</p>
@@ -75,11 +75,11 @@
                         <div class="flex flex-col justify-center items-center">
                             <p class="flex text-2xl font-bold text-white py-2 text-nowrap">Cherry Mae Roxas</p>
                             <p class="flex text-lg font-bold text-white py-2 text-nowrap">Chief Executive Officer (CEO)</p>
-                            <div class="flex border w-6 h-6 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/share/14Rm4r8FZt/?mibextid=qi2Omg'">
+                            <!-- <div class="flex border w-6 h-6 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/share/14Rm4r8FZt/?mibextid=qi2Omg'">
                                 <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                     <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
                                   </svg>                      
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class=" md:w-[90%] xl:w-[100%] border py-4 gap-4 rounded-lg bg-[#583e2f]/50">
@@ -89,11 +89,11 @@
                         <div class="flex flex-col justify-center items-center">
                             <p class="flex text-2xl font-bold text-white py-2 text-nowrap">Marianne Torremocha</p>
                             <p class="flex text-lg font-bold text-white py-2 text-nowrap">Chief Operating Officer (COO)</p>
-                            <div class="flex border w-6 h-6 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/share/14uSBMutGD/?mibextid=qi2Omg'">
+                            <!-- <div class="flex border w-6 h-6 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/share/14uSBMutGD/?mibextid=qi2Omg'">
                                 <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                     <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
                                   </svg>                      
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class=" md:w-[90%] xl:w-[100%] border py-4 gap-4 rounded-lg bg-[#583e2f]/50">
@@ -103,11 +103,11 @@
                         <div class="flex flex-col justify-center items-center">
                             <p class="flex text-2xl font-bold text-white py-2 text-nowrap"> Ma Veronica Reyes</p>
                             <p class="flex text-lg font-bold text-white py-2 text-nowrap">Chief Technology Officer (CTO)</p>
-                            <div class="flex border w-6 h-6 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/share/1GmagNutYs/?mibextid=qi2Omg'">
+                            <!-- <div class="flex border w-6 h-6 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/share/1GmagNutYs/?mibextid=qi2Omg'">
                                 <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                     <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
                                   </svg>                      
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class=" md:w-[90%] xl:w-[100%] border py-4 gap-4 rounded-lg bg-[#583e2f]/50">
@@ -117,11 +117,11 @@
                         <div class="flex flex-col justify-center items-center">
                             <p class="flex text-2xl font-bold text-white py-2 text-nowrap">Nicole Borbon</p>
                             <p class="flex text-lg font-bold text-white py-2 text-nowrap">Chief Financial Officer( CFO)</p>
-                            <div class="flex border w-6 h-6 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/share/15kH9BGQ2z/?mibextid=qi2Omg'">
+                            <!-- <div class="flex border w-6 h-6 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/share/15kH9BGQ2z/?mibextid=qi2Omg'">
                                 <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                     <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
                                   </svg>                      
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class=" md:w-[90%] xl:w-[100%] border py-4 gap-4 rounded-lg bg-[#583e2f]/50">
@@ -131,11 +131,11 @@
                         <div class="flex flex-col justify-center items-center">
                             <p class="flex text-2xl font-bold text-white py-2 text-nowrap">Charles Gloria</p>
                             <p class="flex text-lg font-bold text-white py-2 text-nowrap">Chief Financial Officer( CFO)</p>
-                            <div class="flex border w-6 h-6 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/share/1E7K6o2HLL/?mibextid=qi2Omg'">
+                            <!-- <div class="flex border w-6 h-6 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/share/1E7K6o2HLL/?mibextid=qi2Omg'">
                                 <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                     <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
                                   </svg>                      
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class=" md:w-[90%] xl:w-[100%] border py-4 gap-4 rounded-lg bg-[#583e2f]/50">
@@ -145,11 +145,11 @@
                         <div class="flex flex-col justify-center items-center">
                             <p class="flex text-2xl font-bold text-white py-2 text-nowrap">Jhanah Celetariah</p>
                             <p class="flex text-lg font-bold text-white py-2 text-nowrap">Chief Customer officer (CCO)</p>
-                            <div class="flex border w-6 h-6 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/jh.celetaria?mibextid=kFxxJD'">
+                            <!-- <div class="flex border w-6 h-6 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/jh.celetaria?mibextid=kFxxJD'">
                                 <svg class="w-4 h-4 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                                     <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
                                   </svg>                      
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

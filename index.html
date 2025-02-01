@@ -10,7 +10,7 @@
 </head>
 <body class="relative flex flex-col h-screen bg-gradient-to-r via-[#bcaa9e]  from-[#ad8d78]  to-[#ad8d78] ">
     <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full absolute z-0 opacity-50" style="background-image:url('./img/bg.jpg');">
-    <div class="flex flex-col w-full z-50 h-full md:h-[60%] min-h-[450px] mt-4">
+    <div id="navbar" class="flex flex-col w-full z-50 h-full md:h-auto pt-4">
         <div class="flex flex-row items-start justify-center w-full">
             <div class="hidden md:flex justify-start items-center px-4 py-8 gap-4 font-medium w-[20%] ">
                 <a href="index.html" class="flex hover:underline underline-offset-4 text-[#583e2f] underline text-2xl">Home</a>
@@ -19,12 +19,12 @@
             </div>
             <div class="flex flex-col justify-center items-center w-full sm:w-[80%] md::w-[60%] gap-2 ">
                 <div class="flex flex-row justify-center items-end">
-                    <p class="text-2xl sm:text-5xl font-serif font-medium text-[#583e2f]">Serenity</p>
-                    <div class="flex flex-col w-20 h-20 md:w-40 md:h-40 border-0" style="background-image: url('./img/logo.png'); background-size: 100%; "></div>
-                    <p class="text-2xl sm:text-5xl font-serif font-medium text-[#583e2f]">Scents</p>
+                    <p id="name-serenity" class="text-2xl sm:text-5xl font-serif font-medium text-white">Serenity</p>
+                    <div id="logo" class="flex flex-col w-20 h-20 md:w-40 md:h-40 border-0" style="background-image: url('./img/logo.png'); background-size: 100%; "></div>
+                    <p id="name-scents" class="text-2xl sm:text-5xl font-serif font-medium text-white">Scents</p>
                 </div>
                 <!-- <h1 class="text-4xl font-serif font-medium text-white">Serenity Haven</h1> -->
-                <p class="text-sm sm:text-lg md:text-xl text-white font-semibold ">Light up your world, one scent at a time.</p>
+                <p id="tagline" class="text-sm sm:text-lg md:text-xl text-white font-semibold italic font-serif">Light up your world, one scent at a time.</p>
             </div>
             <div class="relative hidden md:flex justify-end px-4 py-8 gap-4 text-white font-medium w-[20%]">
                 <div class="flex h-5 w-5 justify-center items-center text-center rounded-full bg-[#ad8d78] absolute top-6 right-[125px]">
@@ -39,7 +39,7 @@
         </div>
         <div class="flex flex-col items-center justify-center h-full text-white gap-16">
             <div class="flex flex-col items-center justify-center gap-2">
-                <p class="text-4xl md:text-8xl ">WELCOME</p>
+                <!-- <p class="text-4xl md:text-8xl ">WELCOME</p> -->
                 <!-- <p class="text-2xl font-semibold  font-sans italic">Discover the art of handcrafted luxury candles, designed to brighten your life and create serene moments.</p> -->
             </div>
             <button class="bg-[#ad8d78] hover:bg-[#ba8460] text-white border-2 rounded-full px-10 py-2 text-lg font-semibold hover:animate-pulse animate-bounce" onclick="location.href='products.html'">
@@ -54,64 +54,7 @@
         <a href="#payment" onclick="showTab('payment')">Payment</a>
     </nav> -->
 
-    <div class="hidden md:flex flex-col md:flex-row w-full md:h-[50%] justify-center items-center z-50">
-        <div class="relative flex flex-col h-full w-1/4 ">
-            <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full absolute z-0" style="background-image:url('./img/a.jpg');">
-            <div class="flex flex-col h-full w-full pt-4 pl-4 z-50 bg-black/50 text-white">
-                <p class="text-2xl font-bold ">Best seller</p>
-                <p class="text-xl">Here's our shops best seller.</p>
-            </div>
-            <!-- <a href="#" class="text-4xl font-bold font-serif pt-4 pl-4 hover:underline pb-4"> See all</a> -->
-        </div>
-        <div class="relative flex flex-col h-full w-1/4 bg-white  rounded-lg group overflow-clip">
-            <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full absolute z-50 group-hover:z-0 group-hover:scale-100 scale-125" style="background-image:url('./img/item_1.jpeg'); background-size: 100% 100%;">
-            <!-- <div class="flex w-full h-[80%] justify-center">
-                <img class="flex object-cover w-80 h-80 " src="./img/item_3.jpeg">
-            </div> -->
-            <div class="flex flex-col justify-center items-center w-full h-full bg-black/50 text-white rounded-b-lg  px-8 py-4 z-0 group-hover:z-50">
-                <div class=" flex flex-col justify-center items-center h-full gap-8">
-                    <p class="flex text-2xl font-extrabold">Coffee Roast</p>
-                    <p class="flex text-lg">A warm, comforting coffee aroma, 100ml, 24 hours burn time.</p>
-                </div>
-                <div class="flex flex-row justify-between items-center w-full">
-                    <p class="flex text-2xl font-bold">&#x20B1; 100</p>
-                    <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '1', name: 'Coffee Roast', price: 100, image: './img/item_1.jpeg'})">Add to cart</button>
-                </div>
-            </div>
-        </div>
-        <div class="relative flex flex-col h-full w-1/4 bg-white  rounded-lg group overflow-clip">
-            <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full absolute z-50 group-hover:z-0 group-hover:scale-100 scale-125" style="background-image:url('./img/item_2.jpeg'); background-size: 100% 100%;">
-            <!-- <div class="flex w-full h-[80%] justify-center">
-                <img class="flex object-cover w-80 h-80 " src="./img/item_3.jpeg">
-            </div> -->
-            <div class="flex flex-col justify-center items-center w-full h-full bg-black/50 text-white rounded-b-lg  px-8 py-4 z-0 group-hover:z-50">
-                <div class=" flex flex-col justify-center items-center h-full gap-8">
-                    <p class="flex text-2xl font-extrabold">Rosary Glow</p>
-                    <p class="flex text-lg">A peaceful blend of soft florals, 100ml, 24 hours burn time.</p>
-                </div>
-                <div class="flex flex-row justify-between items-center w-full">
-                    <p class="flex text-2xl font-bold">&#x20B1; 150</p>
-                    <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '2', name: 'Rosary Glow', price: 150, image: './img/item_2.jpeg'})">Add to cart</button>
-                </div>
-            </div>
-        </div>
-        <div class="relative flex flex-col h-full w-1/4 bg-white  rounded-lg group overflow-clip">
-            <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full absolute z-50 group-hover:z-0 group-hover:scale-100 scale-125" style="background-image:url('./img/item_3.jpeg'); background-size: 100% 100%;">
-            <!-- <div class="flex w-full h-[80%] justify-center">
-                <img class="flex object-cover w-80 h-80 " src="./img/item_3.jpeg">
-            </div> -->
-            <div class="flex flex-col justify-center items-center w-full h-full bg-black/50 text-white rounded-b-lg  px-8 py-4 z-0 group-hover:z-50">
-                <div class=" flex flex-col justify-center items-center h-full gap-8">
-                    <p class="flex text-2xl font-extrabold">Jasmine Whisper</p>
-                    <p class="flex text-lg">A delicate, jasmine fragrance, 100ml, 24 hours burn time.</p>
-                </div>
-                <div class="flex flex-row justify-between items-center w-full">
-                    <p class="flex text-2xl font-bold">&#x20B1; 200</p>
-                    <button class="flex justify-center items-center border px-2 py-4 rounded-lg bg-[#ad8d78] hover:bg-[#ba8460] text-white" onclick="addToCart({id: '3', name: 'Jasmine Whisper', price: 200, image: './img/item_3.jpeg'})">Add to cart</button>
-                </div>
-            </div>
-        </div>
-    </div>
+   
     <!-- <footer>
         <p>&copy; 2024 Candle Haven. All rights reserved.</p>
     </footer> -->
