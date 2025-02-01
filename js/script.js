@@ -101,8 +101,10 @@ function addToCart(newItem){
     }
     $(document).ready(function() {
         console.log(itemCount)
-        $('#cartCount').text(itemCount);
-        $('#cartCountMobile').text(itemCount);
+        setTimeout(() => {
+            $('#cartCount').text(itemCount);
+            $('#cartCountMobile').text(itemCount);
+        }, 1000);
     });
 }
 
