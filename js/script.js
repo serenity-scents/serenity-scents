@@ -51,7 +51,7 @@ function speak(url) {
 
 function addToCart(newItem){
     console.log("Add item to cart");
-    speak("./media/item_added.mp3")
+    // speak("./media/item_added.mp3")
     positionTransition(`item-${newItem.id}`)
     let cart = sessionStorage.getItem("cart")
     let itemCount = 0;
@@ -163,16 +163,33 @@ function hidePrivacyModal() {
 let isMoved = false;
 function positionTransition(id) {
     if(!isMoved){
-        var cartCoords = document.getElementById("cart-btn").getBoundingClientRect();
+        var cartId = screen.width <= 766 ? "cartCountMobile" : "cart-btn";
+        var cartCoords = document.getElementById(cartId).getBoundingClientRect();
         var element = document.getElementById(id);
+        element.className = "flex absolute h-full w-full overflow-clip  z-50 ";
         var rectBefore = element.getBoundingClientRect(); //get old coordinates
         element.style.transition = "transform 1000ms ease-in-out, opacity 1000ms ease-in-out";
-        element.style.transform = `translate(${cartCoords.x-rectBefore.x-(cartCoords.x*0.1)}px, ${cartCoords.y-rectBefore.y - 120}px) scale(0.1)`
+        if(screen.width < 640){
+            element.style.transform = `translate(${cartCoords.x-(screen.width/2)}px, ${cartCoords.y-rectBefore.y - 120}px) scale(0.1)`
+            
+        }else if(screen.width >= 640 && screen.width <= 766){
+            if(parseInt(id[id.length-1]) % 2 == 0 ){
+                element.style.transform = `translate(${cartCoords.x-500}px, ${cartCoords.y-rectBefore.y - 120}px) scale(0.1)`;
+            }else{
+                element.style.transform = `translate(${cartCoords.x-200}px, ${cartCoords.y-rectBefore.y - 120}px) scale(0.1)`
+            }
+            
+        }else{
+            element.style.transform = `translate(${cartCoords.x-rectBefore.x-(cartCoords.x*0.1)}px, ${cartCoords.y-rectBefore.y - 120}px) scale(0.1)`
+        }
+        
+        
         element.style.opacity = 0;
 
         isMoved = true;
 
         setTimeout(function() { //without the timeout, transition is ignored
+            element.className = "hidden absolute h-full w-full overflow-clip  z-50 ";
             element.style.transform = `translate(${rectBefore.x}px, ${rectBefore.y}px) scale(1)`;
             element.removeAttribute('style');
             isMoved = false;

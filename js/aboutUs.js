@@ -1,3 +1,3 @@
 window.onload=function(){
-    speak("./media/about_us.mp3")
+    // speak("./media/about_us.mp3")
 }
