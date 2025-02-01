@@ -1,4 +1,4 @@
 
 window.onload=function(){
-    speak("./media/home_section.mp3")
+    // speak("./media/home_section.mp3")
 }

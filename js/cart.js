@@ -89,7 +89,7 @@ window.onload=function(){
             console.error("Error playing audio:", error);
           });
       }
-    speak()
+    // speak()
     displayProducts()
 }
 

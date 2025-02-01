@@ -1,5 +1,5 @@
 window.onload=function(){
-    speak("./media/contact_us.mp3")
+    // speak("./media/contact_us.mp3")
 }
 
 // emailjs.init('CdjJplvtx5oveCsiP'); // Replace with your EmailJS User ID
