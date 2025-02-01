@@ -13,7 +13,7 @@
 </head>
 <body class="relative flex flex-col items-center h-screen bg-gradient-to-r via-[#bcaa9e]  from-[#ad8d78]  to-[#ad8d78] max-h-screen">
     <img class="flex flex-col h-full bg-no-repeat bg-cover bg-center w-full fixed z-0 opacity-50" style="background-image:url('./img/bg.jpg');">
-    <div class="flex flex-col w-full z-50 h-full md:h-[60%] mt-4">
+    <div id="navbar" class="flex flex-col w-full z-50 h-full md:h-auto pt-4">
         <div class="flex flex-row items-start justify-center w-full">
             <div class="hidden md:flex justify-start items-center px-4 py-8 gap-4 font-medium w-[20%] ">
                 <a href="index.html" class="flex hover:underline underline-offset-4 text-white text-xl">Home</a>
@@ -22,12 +22,12 @@
             </div>
             <div class="flex flex-col justify-center items-center w-full sm:w-[80%] md::w-[60%] gap-2 ">
                 <div class="flex flex-row justify-center items-end">
-                    <p class="text-2xl sm:text-5xl font-serif font-medium text-[#583e2f]">Serenity</p>
-                    <div class="flex flex-col w-20 h-20 md:w-40 md:h-40 border-0" style="background-image: url('./img/logo.png'); background-size: 100%; "></div>
-                    <p class="text-2xl sm:text-5xl font-serif font-medium text-[#583e2f]">Scents</p>
+                    <p id="name-serenity" class="text-2xl sm:text-5xl font-serif font-medium text-white">Serenity</p>
+                    <div id="logo" class="flex flex-col w-20 h-20 md:w-40 md:h-40 border-0" style="background-image: url('./img/logo.png'); background-size: 100%; "></div>
+                    <p id="name-scents" class="text-2xl sm:text-5xl font-serif font-medium text-white">Scents</p>
                 </div>
                 <!-- <h1 class="text-4xl font-serif font-medium text-white">Serenity Haven</h1> -->
-                <p class="text-sm sm:text-lg md:text-xl text-white font-semibold ">Light up your world, one scent at a time.</p>
+                <p id="tagline" class="text-sm sm:text-lg md:text-xl text-white font-semibold italic font-serif">Light up your world, one scent at a time.</p>
             </div>
             <div class="relative hidden md:flex justify-end px-4 py-8 gap-4 text-white font-medium w-[20%]">
                 <div class="flex h-5 w-5 justify-center items-center text-center rounded-full bg-[#ad8d78] absolute top-6 right-[125px]">
@@ -42,7 +42,7 @@
         </div>
     </div>
     
-    <div class="flex flex-col  z-50 items-start w-[90%] sm:w-[70%] md:w-[90%] xl:w-[60%]">
+    <div class="flex flex-col  z-40 items-start w-[90%] sm:w-[70%] md:w-[90%] xl:w-[60%]">
         <!-- <p class="font-bold text-6xl text-white z-50 mt-20 border px-4 rounded-t-lg bg-[#583e2f]/50">Contact Us</p> -->
         <div class="flex flex-col  z-50 items-center justify-center w-full overflow-hidden gap-4 border p-4 rounded-lg bg-[#583e2f]/50 text-white mt-20 mb-32">
             <div class=" flex flex-col xl:flex-row">
@@ -69,9 +69,9 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                           </svg>
                         <p class="text-2xl font-bold">Email</p>
-                        <p>mariannetorremocha05@gmail.com</p>
+                        <p>serenity.scent.shop@gmail.com</p>
                     </div>
-                    <div class="flex md:hidden xl:flex mb-4 border w-10 h-10 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="location.href='https://www.facebook.com/share/14VopQxiKt/'">
+                    <div class="flex md:hidden xl:flex mb-4 border w-10 h-10 rounded-full items-center justify-center bg-[#ad8d78] hover:bg-[#ba8460] text-white cursor-pointer" onclick="window.open('https://www.facebook.com/share/14VopQxiKt/')">
                         <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path fill-rule="evenodd" d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z" clip-rule="evenodd"/>
                           </svg>                      

@@ -32,7 +32,7 @@ window.onload=function(){
                 productList.appendChild(productDiv);
             return;
         }
-        productList.className = ("flex flex-col w-[90%] md:w-[80%] xl:w-[50%] items-center h-[800px] gap-4 overflow-y-auto border rounded-lg bg-[#583e2f]/50 scrollbar-thin scrollbar-track-[#F1ECE9] scrollbar-thumb-[#AD8D78] scrollbar-corner-[#BCAA9E]");
+        productList.className = ("flex flex-col w-[90%] md:w-[80%] xl:w-[50%] items-center h-[600px] gap-4 overflow-y-auto border rounded-lg bg-[#583e2f]/50 scrollbar-thin scrollbar-track-[#F1ECE9] scrollbar-thumb-[#AD8D78] scrollbar-corner-[#BCAA9E]");
         cartItems.forEach(product => {
             totalAmount = totalAmount + (product.price * product.qty);
             const productDiv = document.createElement("div");
