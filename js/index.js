@@ -1,4 +1,8 @@
 
 window.onload=function(){
-    // speak("./media/home_section.mp3")
+    speak("./media/welcome.mp3");
+    setTimeout(() => {
+        speak("./media/tagline.mp3");
+    },2500)
+
 }

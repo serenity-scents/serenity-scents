@@ -11,7 +11,23 @@ emailjs.init({
 function submitFeedback(){
     let fromName = document.getElementById("client-name").value; 
     let fromEmail = document.getElementById("client-email").value; 
-    let message = document.getElementById("client-message").value; 
+    let message = document.getElementById("client-message").value;
+    let error1 = '';
+    let error2 = '';
+    let error3 = '';
+    if(fromName.length == 0){
+        error1 = '* Client name is required';
+    } 
+    if(fromEmail.length == 0){
+        error2 = '* Client email address is required'
+    }
+    if(message.length == 0){
+        error3 = '* Client message is required'
+    }
+    if(error1 != '' || error2 != '' || error3 != ''){
+        window.alert(error1 + '\n' + error2 + "\n" + error3);
+        return
+    } 
     sendEmail(fromName, fromEmail, message)
     // Example usage
     // sendEmail(
